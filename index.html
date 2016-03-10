@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#aaaaaa;
+   // height:500px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+#section {
+    width:800px;
+    float:left;
+    padding:10px;	 	 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="javascripts/comments.js">
+</script>
+</head>
+<body>
+
+<div id="header">
+<h1>SQComic Update Page</h1>
+</div>
+
+<div id="nav"><br>
+<button id="serialize">Serialize Form Values</button>
+<button id="getComments">Get All Comments</button>
+<button id="delete">Delete All Comments</button><br><br><br>
+<button id="submitcomic">Submit New Comic</button>
+<button id="getComics">Show Comics In Database</button><br><br><br>
+</div>
+
+<div id="section">
+<h2>Write to 'Comments' Database</h2>
+<form id="commentForm" action="">
+        <label for="name">Name:     </label>
+	<input type="text" id="Name" placeholder="Name">
+        <label for="comment"> Comment: </label>
+	<input type="text" id="Comment" placeholder="Comment" size="55"><br>
+</form>
+<div id="json">JSON Here</div>
+<div id="done">RESULTS Here</div>
+<div id="comments">COMMENTS Here</div><br>
+<h2>Insert Comics Into 'Comics' Database</h2>
+<form id="comicForm" action="">
+	<label for="filepath">File Name: </label>
+	<input type="text" id="filename" placeholder="Enter file name">
+	<label for="keys">Key words: </label>
+	<input type="text" id="keywords" placeholder="Enter key words" size="50"><br>
+	<textarea id="textbox" placeholder="Enter Searchable Text Here" rows="5" cols="100"></textarea>
+</form>
+	<div id="submittedtext">SUBMIT DATA Here</div>
+	<div id="dbcontents">DB CONTENTS Here</div>
+</div>
+
+<div id="footer">
+<h2 id="status">Status</h2>
+</div>
+
+</body>
+</html>
+
+
+
+
